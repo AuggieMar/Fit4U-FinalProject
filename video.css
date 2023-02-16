@@ -1,0 +1,339 @@
+/* This is the css subpage for the video section*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+#Overlay {
+    background: url(Images/Testing3.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: top center;
+    
+   
+    
+}
+.overlay {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+#Overlay h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: reveal_text .5s ease forwards;
+    animation-delay: 1s;
+   
+
+}
+#Overlay h1:nth-child(1){
+    animation-delay: 1s;
+}
+
+#Overlay h1:nth-child(2){
+    animation-delay: 2s;
+}
+#Overlay h1:nth-child(3){
+    animation-delay: 3s;
+}
+#Overlay h1 span{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color:grey;
+    animation: text_reveal 1s ease;
+    animation-delay: .3s;
+}
+#Overlay h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#Overlay h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#Overlay h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+#Overlay .overlay{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+@keyframes text_reveal { 50%
+    {
+        width: 100%;
+        left: 0;
+
+
+    }
+    100%
+    {
+        width: 0;
+        left: 100%;
+
+    } 
+ 
+}
+@keyframes reveal_text{
+100%{
+    color: white;
+
+}
+}
+#Overlay .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;    
+}
+
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+
+}
+#chk1{
+    display: none;
+
+}
+i{
+    color: #fff;
+    cursor: pointer;
+
+}
+header .logo{
+    flex: 1;
+    color: #fff;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+  
+}
+
+header.search-box{
+    flex: 1;
+    position: fixed;
+}
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 40px;
+   
+   
+}
+.search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 1;
+    right: 1;
+    transform: scale(0.9);
+    background: green;
+
+}
+
+  
+   
+
+
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+
+
+}
+header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh-100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+       transition: right 0.5s linear;
+    
+
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+
+    }
+
+}
+@media(max-width:600px) {
+    header .logo{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+    header ul{
+        width: 100px;
+    }
+    
+}
+
+#Blog{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 40px;
+   border-bottom: 1px solid black;
+}
+.Blog-Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.Blog-Heading span{
+    color: lightblue;
+    font-size: 3rem;
+    
+}
+.Blog-Heading h1{
+    font-size: 3.5rem;
+    color: gray;
+    font-weight: 600;
+}
+.Blog-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.Blog-Box{
+    width: 350px;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid rgb(209, 207, 207);
+    margin: 20px;
+
+}
+.Blog-Img{
+    width: 100%;
+    height: auto;
+}
+.Blog-Img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.Blog-Text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Blog-Text span{
+    color: cornflowerblue;
+
+
+}
+.Blog-Text .Blog-Title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:black;
+}
+.Blog-Text .Blog-Title:hover{
+    color: cornflowerblue;
+}
+.Blog-Text p{
+    color: lightslategray;
+    font-size: 0.9rem;
+}
+
+.Banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.Banner .imgbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.Banner .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  object-fit: cover;}
+
+.blog-hover-color:hover {
+
+    background: gold;
+    opacity: 0.7;
+
+
+}
+

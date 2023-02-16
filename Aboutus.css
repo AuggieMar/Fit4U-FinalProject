@@ -1,0 +1,191 @@
+
+/* This is the css that goes with the About Us Page*/
+
+h2 {
+
+    text-align: center;
+    font-size: 5rem;
+    font-family: arial;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0%;
+    padding-top: 3%;
+    color: white;
+ 
+   
+
+}
+ h3{
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+h4{
+    color: white;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+}
+
+.para-1 {
+    color: white;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+   
+}
+
+.annualreportheader{
+    
+    text-align: left;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    margin: 0%;
+    padding-top: 1%;
+
+ }
+.annualreport{
+    width: 100%;
+    text-align: left;
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+
+.Execs{
+    font-family: 'Courier New', Courier, monospace;
+}
+#execnames{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tabledata{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+ 
+}
+table, th, td, tr{
+
+    border-style: solid;
+    border-radius: solid;
+    border-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    background-color: rgb(241, 228, 228);
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+* {
+    padding: 0;
+    margin:0;
+  }
+  
+  body {
+    background-color: #474e69;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    margin: 20px 40px;
+    color: white;
+  }
+  
+  .heading {
+    font-size: 60px;
+    color: white;
+  }
+  
+  .heading span {
+    font-style: italic;
+    font-size: 30px;
+  }
+  
+  .profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+  }
+  
+  .profile {
+    flex-basis: 260px;
+  }
+  
+  .profile .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .profile:hover .profile-img {
+    filter: grayscale(0);
+  }
+  
+  .user-name {
+    margin-top: 30px;
+    font-size: 35px;
+  }
+  
+  .profile h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+  }
+  
+  .profile p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  @media only screen and (max-width: 1150px) {
+    .profiles {
+      flex-direction: column;
+    }
+  
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile p {
+      text-align: center;
+      margin: 20px 60px 80px 60px;
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .heading {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+    }
+  
+    .heading span {
+      font-size: 15px;
+    }
+  
+    .profiles {
+      margin: 20px 0;
+    }
+  
+    .profile p {
+      margin: 20px 10px 80px 10px;
+    }
+  }

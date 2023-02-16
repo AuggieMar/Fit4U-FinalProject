@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+#Overlay {
+    background: url(Images/Testing3.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: top center;
+    
+   
+    
+}
+.overlay {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+#Overlay h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: reveal_text .5s ease forwards;
+    animation-delay: 1s;
+   
+
+}
+#Overlay h1:nth-child(1){
+    animation-delay: 1s;
+}
+
+#Overlay h1:nth-child(2){
+    animation-delay: 2s;
+}
+#Overlay h1:nth-child(3){
+    animation-delay: 3s;
+}
+#Overlay h1 span{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color:grey;
+    animation: text_reveal 1s ease;
+    animation-delay: .3s;
+}
+#Overlay h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#Overlay h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#Overlay h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+#Overlay .overlay{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+@keyframes text_reveal { 50%
+    {
+        width: 100%;
+        left: 0;
+
+
+    }
+    100%
+    {
+        width: 0;
+        left: 100%;
+
+    } 
+ 
+}
+@keyframes reveal_text{
+100%{
+    color: white;
+
+}
+}
+
+
+
+
+
+
+#newoverlay{
+    background: url(Images/product-photography-important.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: top center;
+  
+
+}
+
+.newoverlay {
+    min-height: 50vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+#newoverlay h1{
+    display: block;
+    width: fit-content;
+    font-size: 7rem;
+    position: relative;
+    color: rgb(100, 102, 103);
+  
+
+  
+    
+   
+
+}
+#newoverlay .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(82, 90, 91);
+    background-color: transparent;
+    border: 2px solid rgb(102, 107, 107);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;  
+    text-decoration: none;  
+   
+}
+
+
+
+  
+
+
+
+
+
+
+
+ 
+ 
+
+  
